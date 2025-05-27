@@ -1,14 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "Pixel Color Picker",
-  "version": "2.1",
-  "description": "Pick screen pixel color, analyze contrast, and preview HEX/RGB with pins.",
-  "permissions": ["tabs", "activeTab", "scripting", "clipboardWrite"],
+  "name": "Pixel Color Picker - 色彩取樣與對比分析工具",
+  "short_name": "Pixel Picker",
+  "version": "1.0.0",
+  "description": "點擊任意畫面像素以取得色碼、RGB 值與 WCAG 對比分數，支援螢幕擷取與多點分析。",
+  "permissions": ["tabs", "activeTab", "clipboardWrite", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
+    "default_title": "啟用像素取色器",
     "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_icon": {
+      "128": "icon-128.png"
+    }
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "homepage_url": "https://github.com/eric781ctf/web-color-analyzer/tree/v1.0.1",
+  "author": "Wei-Yang, Chang",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
   }
 }

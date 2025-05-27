@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Picker</title>
+  <link rel="stylesheet" href="picker.css">
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div id="canvasWrapper">
+    <canvas id="screenshot"></canvas>
+  </div>
+  <div id="info"></div>
+  <div id="tableContainer">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>HEX</th><th>RGB</th><th>對比(黑)</th><th>對比(白)</th>
+        </tr>
+      </thead>
+      <tbody id="resultTable"></tbody>
+    </table>
+  </div>
+  <script src="picker.js"></script>
+</body>
+</html>

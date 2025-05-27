@@ -1,0 +1,22 @@
+.color-analyzer-overlay {
+  position: absolute;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 99999;
+  opacity: 0.95;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.color-analyzer-overlay button {
+  margin-top: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

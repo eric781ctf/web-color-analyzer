@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Color Analyzer</title>
+  </head>
+  <body>
+    <h3>對比分析工具</h3>
+    <button id="toggle">啟用 / 停用分析模式</button>
+    <script>
+      document.getElementById("toggle").addEventListener("click", () => {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+          chrome.tabs.sendMessage(tabs[0].id, { toggle: "analyzer" }, (res) => {
+            console.log("Analyzer mode:", res.status);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

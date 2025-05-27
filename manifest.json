@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 3,
   "name": "Web Color Analyzer",
   "description": "Click any element to check its background/text color contrast and WCAG compliance.",
   "version": "1.0",

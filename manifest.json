@@ -1,19 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Web Color Analyzer",
-  "description": "Click any element to check its background/text color contrast and WCAG compliance.",
-  "version": "1.0",
-  "permissions": ["scripting", "activeTab", "clipboardWrite"],
-  "action": {
-    "default_icon": "icon.png",
-    "default_title": "Check contrast",
-    "default_popup": "popup.html"
+  "name": "Pixel Color Picker",
+  "version": "2.1",
+  "description": "Pick screen pixel color, analyze contrast, and preview HEX/RGB with pins.",
+  "permissions": ["tabs", "activeTab", "scripting", "clipboardWrite"],
+  "background": {
+    "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["wcag.js", "content.js"],
-      "css": ["style.css"]
-    }
-  ]
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
 }

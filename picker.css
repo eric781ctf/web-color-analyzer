@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: white;    /* ✅ 背景白色 */
+  color: black;         /* ✅ 字體黑色 */
+  overflow: auto;
+}
+#canvasWrapper {
+  max-width: 100%;
+  max-height: 70vh;
+  overflow: auto;
+  border-bottom: 1px solid #444;
+}
+canvas {
+  display: block;
+  cursor: crosshair;
+}
+#info {
+  padding: 10px;
+  background: #e0f7fa;   
+  color: #006064;         
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+#tableContainer {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 25vh;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: white;         /* ✅ 背景改為白色 */
+  color: black;              /* ✅ 字體改為黑色 */
+}
+th, td {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}

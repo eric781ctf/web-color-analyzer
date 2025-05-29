@@ -3,7 +3,7 @@
   "name": "Pixel Color Picker",
   "version": "2.1",
   "description": "Pick screen pixel color, analyze contrast, and preview HEX/RGB with pins.",
-  "permissions": ["tabs", "activeTab", "clipboardWrite"],
+  "permissions": ["activeTab", "clipboardWrite"],
   "background": {
     "service_worker": "background.js"
   },
